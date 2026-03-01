@@ -57,7 +57,7 @@ const RexiLore = () => {
 
     return (
         <div className="min-h-screen bg-white text-slate-900 selection:bg-pink-500 selection:text-white font-sans overflow-x-hidden">
-            {/* Navbar - Liquid Glass (Light) */}
+
             <nav className="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-xl border-b border-black/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
                 <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
                     <motion.div
