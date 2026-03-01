@@ -1,0 +1,8 @@
+const works = [
+  { id: 1, title: 'Dynamic Product Ad', category: 'Video Ad', img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=600&auto=format&fit=crop' },
+  { id: 2, title: 'Social Media Campaign', category: 'Image Design', img: 'https://images.unsplash.com/photo-1611162617474-5b21e879e113?q=80&w=600&auto=format&fit=crop' },
+  { id: 3, title: 'Story Format Promo', category: 'Video Edit', img: 'https://images.unsplash.com/photo-1574717024653-61fd2cf4d44d?q=80&w=600&auto=format&fit=crop' },
+  { id: 4, title: 'Brand Identity', category: 'Graphics', img: 'https://images.unsplash.com/photo-1542291026-7eec264c27ff?q=80&w=600&auto=format&fit=crop' },
+  { id: 5, title: 'App Install Video', category: 'Motion Graphics', img: 'https://images.unsplash.com/photo-1512941937669-90a1b58e7e9c?q=80&w=600&auto=format&fit=crop' },
+  { id: 6, title: 'Carousel Ad', category: 'Image Ads', img: 'https://images.unsplash.com/photo-1505330622279-bf7d7fc918f4?q=80&w=600&auto=format&fit=crop' }
+];
