@@ -35,29 +35,14 @@ const sampleImages = [
     { img: '1z6SdVKeYD1od-9hwoNzloUeX57t9kLw-' },
 ];
 
-const carouselImages = [
-    "/enggo/1.png",
-    "/enggo/2.jpg",
-    "/enggo/3.png",
-    "/enggo/4.png",
-    "/enggo/5.png",
-]
 
 const RexiLore = () => {
     const [selectedVideo, setSelectedVideo] = useState(null);
     const [selectedImage, setSelectedImage] = useState(null);
-    const [currentImageIndex, setCurrentImageIndex] = useState(0);
-
-    useEffect(() => {
-        const interval = setInterval(() => {
-            setCurrentImageIndex((prev) => (prev + 1) % carouselImages.length);
-        }, 3500); // 3.5 seconds per slide
-        return () => clearInterval(interval);
-    }, []);
 
     return (
         <div className="min-h-screen bg-white text-slate-900 selection:bg-pink-500 selection:text-white font-sans overflow-x-hidden">
-            {/* Navbar - Liquid Glass (Light) */}
+
             <nav className="fixed w-full z-50 top-0 bg-white/80 backdrop-blur-xl border-b border-black/5 shadow-[0_4px_30px_rgba(0,0,0,0.03)]">
                 <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
                     <motion.div
@@ -88,94 +73,51 @@ const RexiLore = () => {
                 <div className="absolute top-1/2 left-1/4 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-pink-300/30 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
                 <div className="absolute top-1/3 right-1/4 w-[500px] h-[500px] bg-rose-200/40 rounded-full blur-[120px] -z-10 pointer-events-none"></div>
 
-                <div className="grid md:grid-cols-2 gap-12 items-center w-full">
-                    {/* Left Column: Text */}
-                    <div className="text-left z-10">
-                        <motion.div
-                            initial="hidden"
-                            animate="visible"
-                            variants={fadeUp}
-                        >
-                            <span className="inline-flex items-center gap-2 px-4 py-1.5 rounded-full bg-pink-50 border border-pink-100 text-xs sm:text-sm font-semibold text-pink-600 mb-6 backdrop-blur-xl shadow-sm">
-                                <span className="w-2.5 h-2.5 rounded-full bg-pink-500 animate-pulse"></span>
-                                Accepting New Clients
-                            </span>
-                        </motion.div>
-
-                        <motion.h2
-                            initial="hidden" animate="visible" variants={fadeUp}
-                            className="text-2xl md:text-3xl font-bold text-slate-500 mb-3"
-                        >
-                            Hi, I'm <span className="text-slate-900">Rex Zenith Catian</span> 👋
-                        </motion.h2>
-
-                        <motion.h1
-                            initial="hidden" animate="visible" variants={fadeUp}
-                            className="text-5xl sm:text-6xl md:text-7xl lg:text-[5.5rem] font-black tracking-tighter leading-[1.05] mb-8 relative z-10"
-                        >
-                            <span className="absolute -top-10 -left-10 text-8xl text-pink-300/30 rotate-12 -z-10 blur-[2px]">✦</span>
-                            <span className="inline-block hover:-translate-y-2 transition-transform duration-300">Creative</span>{" "}
-                            <span className="relative inline-block group cursor-default mt-2 sm:mt-0">
-                                <span className="absolute inset-0 bg-pink-200/50 rounded-2xl -z-10 scale-110 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
-                                <span className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl -z-10 rotate-2 group-hover:-rotate-2 transition-transform duration-300 shadow-lg hidden md:block"></span>
-                                <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 md:text-white md:bg-none md:px-2 md:py-1 block group-hover:scale-105 transition-transform duration-300">
-                                    Video Editor
-                                </span>
-                            </span><br />
-                            <span className="text-3xl sm:text-4xl md:text-5xl text-slate-700 font-extrabold tracking-tight mt-4 block flex-wrap items-center gap-3">
-                                & Dropshipping Ad Specialist
-                                <span className="inline-block animate-[spin_4s_linear_infinite] text-pink-500 ml-3 hidden sm:inline-block">✺</span>
-                            </span>
-                            <span className="absolute -bottom-8 right-1/4 text-6xl text-rose-300/30 -rotate-12 -z-10 blur-[1px]">✦</span>
-                        </motion.h1>
-
-                        <motion.p
-                            initial="hidden" animate="visible" variants={fadeUp}
-                            className="text-lg md:text-xl text-slate-600 max-w-xl mb-12 leading-relaxed"
-                        >
-                            I am a passionate Video Editor & Graphic Designer with strong research skills and a year of experience crafting highly engaging e-commerce video ads and compelling image creatives.
-                        </motion.p>
-
-                        <motion.div
-                            initial="hidden" animate="visible" variants={fadeUp}
-                            className="flex flex-col sm:flex-row gap-5"
-                        >
-                            <a href="#videos" className="px-8 py-4 bg-gradient-to-r from-pink-500 to-rose-500 hover:from-pink-600 hover:to-rose-600 hover:scale-105 rounded-full font-bold text-white shadow-[0_10px_30px_rgba(236,72,153,0.3)] transition-all flex items-center justify-center gap-3 text-lg">
-                                See My Videos <FaPlay className="text-sm" />
-                            </a>
-                            <a href="#contact" className="px-8 py-4 bg-white hover:bg-slate-50 border border-slate-200 rounded-full font-bold text-slate-900 transition-all flex items-center justify-center gap-3 text-lg shadow-sm">
-                                Let's Talk <FaEnvelope />
-                            </a>
-                        </motion.div>
-                    </div>
-
-                    {/* Right Column: Image with Liquid Glass Effect */}
-                    <motion.div
-                        initial={{ opacity: 0, x: 50 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        transition={{ duration: 0.8, ease: "easeOut", delay: 0.2 }}
-                        className="relative hidden md:block z-10"
+                <div className="flex flex-col items-center text-center w-full z-10">
+                    <motion.h2
+                        initial="hidden" animate="visible" variants={fadeUp}
+                        className="text-2xl md:text-3xl font-bold text-slate-500 mb-6"
                     >
-                        {/* Blob backdrop behind the glass */}
-                        <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-3/4 h-3/4 bg-gradient-to-tr from-pink-300 to-rose-300 rounded-full blur-[80px] opacity-40 animate-pulse"></div>
+                        Hi, I'm <span className="text-slate-900 font-black">Rex Zenith Catian</span>
+                    </motion.h2>
 
-                        <div className="relative aspect-square rounded-[2.5rem] overflow-hidden bg-white/50 backdrop-blur-2xl border border-white shadow-xl p-4 group">
-                            <div className="w-full h-full rounded-[2rem] overflow-hidden relative border border-slate-200">
-                                <AnimatePresence mode="wait">
-                                    <motion.img
-                                        key={currentImageIndex}
-                                        src={carouselImages[currentImageIndex]}
-                                        alt="Creative Portfolo"
-                                        initial={{ opacity: 0, scale: 1.05 }}
-                                        animate={{ opacity: 1, scale: 1 }}
-                                        exit={{ opacity: 0 }}
-                                        transition={{ duration: 0.8 }}
-                                        className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-transform duration-700"
-                                    />
-                                </AnimatePresence>
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-900/40 to-transparent z-10 pointer-events-none"></div>
-                            </div>
-                        </div>
+                    <motion.h1
+                        initial="hidden" animate="visible" variants={fadeUp}
+                        className="text-5xl sm:text-6xl md:text-8xl lg:text-[7rem] font-black tracking-tighter leading-[1] mb-10 relative"
+                    >
+                        <span className="absolute -top-10 -left-10 text-8xl text-pink-300/30 rotate-12 -z-10 blur-[2px]">✦</span>
+                        <span className="inline-block hover:-translate-y-2 transition-transform duration-300">Creative</span>{" "}
+                        <span className="relative inline-block group cursor-default mt-2 lg:mt-0">
+                            <span className="absolute inset-0 bg-pink-200/50 rounded-2xl -z-10 scale-110 blur-xl opacity-0 group-hover:opacity-100 transition-opacity duration-500"></span>
+                            <span className="absolute -inset-1 bg-gradient-to-r from-pink-500 to-rose-500 rounded-xl -z-10 rotate-2 group-hover:-rotate-2 transition-transform duration-300 shadow-lg hidden md:block"></span>
+                            <span className="relative text-transparent bg-clip-text bg-gradient-to-r from-pink-500 via-rose-500 to-red-500 md:text-white md:bg-none md:px-6 md:py-2 block group-hover:scale-105 transition-transform duration-300">
+                                Video Editor
+                            </span>
+                        </span><br />
+                        <span className="text-3xl sm:text-4xl md:text-6xl text-slate-800 font-extrabold tracking-tight mt-6 block">
+                            & Dropshipping Ad Specialist
+                            <span className="inline-block animate-[spin_4s_linear_infinite] text-pink-500 ml-4 hidden sm:inline-block">✺</span>
+                        </span>
+                        <span className="absolute -bottom-12 right-1/4 text-6xl text-rose-300/30 -rotate-12 -z-10 blur-[1px]">✦</span>
+                    </motion.h1>
+
+                    <motion.p
+                        initial="hidden" animate="visible" variants={fadeUp}
+                        className="text-xl md:text-2xl text-slate-600 max-w-3xl mb-12 leading-relaxed font-medium"
+                    >
+                        I am a passionate Video Editor & Graphic Designer with strong research skills and a year of experience crafting highly engaging e-commerce video ads and compelling image creatives.
+                    </motion.p>
+
+                    <motion.div
+                        initial="hidden" animate="visible" variants={fadeUp}
+                        className="flex flex-col sm:flex-row gap-6 justify-center"
+                    >
+                        <a href="#videos" className="px-10 py-5 bg-slate-900 hover:bg-pink-500 hover:scale-105 rounded-full font-bold text-white shadow-xl transition-all flex items-center justify-center gap-3 text-xl">
+                            See My Videos <FaPlay className="text-sm" />
+                        </a>
+                        <a href="#contact" className="px-10 py-5 bg-white hover:bg-slate-50 border-2 border-slate-200 rounded-full font-bold text-slate-900 transition-all flex items-center justify-center gap-3 text-xl shadow-sm">
+                            Let's Talk <FaEnvelope />
+                        </a>
                     </motion.div>
                 </div>
             </section>
