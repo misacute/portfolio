@@ -21,16 +21,39 @@ const staggerContainer = {
     }
 };
 
-const sampleVideos = [
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1fuG6XmFkEim_TxDPqDpvb5PzS1v7XDR8/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1kG-RgbrHcH7HJlg17Tzqa6LpYEaYrdCs/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/199MIV8dPByaGr1WQJMPfxJnJjUc8EbU5/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1G7iGrXPLbeFkXWORzmPNLCF00JVsEncF/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1CctGE3YoI17CAwwTPtb3QhClWTxP9Lv0/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1CKNX1U30U3ZhjEaHUbSPtdopUUxN7lsW/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1T17iXQwtMgIL5jW34ljwBr_cOstk1L8p/preview' },
-    { img: 'https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop', iframeSrc: 'https://drive.google.com/file/d/1cyheS2x4iAP40lj0sIiClFgMOZK1rEqb/preview' },
+const videoCategories = [
+    {
+        title: "VSL Ads",
+        videos: [
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1fuG6XmFkEim_TxDPqDpvb5PzS1v7XDR8/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1kG-RgbrHcH7HJlg17Tzqa6LpYEaYrdCs/preview' },
+        ]
+    },
+    {
+        title: "Viral AI content",
+        videos: [
+            { img: '1O4C0L4ShCdCkWxdCR51d-Mt91d2x_XWY', iframeSrc: 'https://drive.google.com/file/d/199MIV8dPByaGr1WQJMPfxJnJjUc8EbU5/preview' },
+            { img: '1O4C0L4ShCdCkWxdCR51d-Mt91d2x_XWY', iframeSrc: 'https://drive.google.com/file/d/1G7iGrXPLbeFkXWORzmPNLCF00JVsEncF/preview' },
+            { img: '1O4C0L4ShCdCkWxdCR51d-Mt91d2x_XWY', iframeSrc: 'https://drive.google.com/file/d/1CctGE3YoI17CAwwTPtb3QhClWTxP9Lv0/preview' },
+        ]
+    },
+    {
+        title: "Organic Ads",
+        videos: [
+            { img: '1micEdSZQGw1R0_lAOC55AkxAkFN8Nt8a', iframeSrc: 'https://drive.google.com/file/d/1CKNX1U30U3ZhjEaHUbSPtdopUUxN7lsW/preview' },
+            { img: '1micEdSZQGw1R0_lAOC55AkxAkFN8Nt8a', iframeSrc: 'https://drive.google.com/file/d/1T17iXQwtMgIL5jW34ljwBr_cOstk1L8p/preview' },
+            { img: '1micEdSZQGw1R0_lAOC55AkxAkFN8Nt8a', iframeSrc: 'https://drive.google.com/file/d/1cyheS2x4iAP40lj0sIiClFgMOZK1rEqb/preview' },
+        ]
+    },
+    {
+        title: "Localized",
+        videos: [
+            { img: '1yXT9dbdWxynWHk2E2sac1Otjx1SRi1NI', iframeSrc: 'https://drive.google.com/file/d/1o6c02MnEA18Tr65nR10xiqAoqLT00Qfh/preview' },
+            { img: '1yXT9dbdWxynWHk2E2sac1Otjx1SRi1NI', iframeSrc: 'https://drive.google.com/file/d/1memm8RcHSeD-RhJwbcHSqV5ZtlNVjjTo/preview' },
+            { img: '1yXT9dbdWxynWHk2E2sac1Otjx1SRi1NI', iframeSrc: 'https://drive.google.com/file/d/1N9qS6sLWZUy5wWL0KrgRzx1qZr3Vs3FX/preview' },
+        ]
+    }
 ];
 
 const sampleImages = [
@@ -74,8 +97,24 @@ const Enggo = () => {
                 <div className="max-w-7xl mx-auto px-6 py-5 flex justify-between items-center">
                     <motion.div
                         initial={{ opacity: 0, x: -20 }}
-                        animate={{ opacity: 1, x: 0 }}
-                        className="text-2xl font-black tracking-tighter bg-gradient-to-r from-fuchsia-400 to-cyan-400 bg-clip-text text-transparent"
+                        animate={{
+                            opacity: 1,
+                            x: 0,
+                            filter: ["brightness(1)", "brightness(1.3)", "brightness(1)"],
+                            textShadow: [
+                                "0 0 0px rgba(192,38,211,0)",
+                                "0 0 20px rgba(192,38,211,0.3)",
+                                "0 0 0px rgba(192,38,211,0)"
+                            ]
+                        }}
+                        transition={{
+                            opacity: { duration: 0.5 },
+                            x: { duration: 0.5 },
+                            filter: { duration: 3, repeat: Infinity, ease: "easeInOut" },
+                            textShadow: { duration: 3, repeat: Infinity, ease: "easeInOut" }
+                        }}
+                        whileHover={{ scale: 1.05, filter: "brightness(1.5)" }}
+                        className="text-2xl font-black tracking-tighter bg-gradient-to-r from-fuchsia-400 to-cyan-400 bg-clip-text text-transparent cursor-pointer"
                     >
                         FROI.VFX
                     </motion.div>
@@ -199,9 +238,9 @@ const Enggo = () => {
                             { icon: <FaVideo size={30} />, title: "Video Ads & Edits", desc: "Fast-paced, hook-driven TikToks, Reels, and YouTube ads designed for maximum engagement." },
                             { icon: <FaImage size={30} />, title: "Image Creatives", desc: "Striking graphics and carousel ads tuned perfectly for Facebook and Instagram algorithms." },
                             { icon: <MdOutlineSlowMotionVideo size={34} />, title: "Motion Graphics", desc: "Custom animations, kinetic typography, and VFX that make your content impossible to ignore." },
-                            { icon: <FaPenNib size={30} />, title: "Ad Scriptwriting", desc: "Compelling, hook-driven scripts that convert viewers into customers by addressing pain points and providing solutions." },
+                            { icon: <FaPenNib size={30} />, title: "Ad Scriptwriting", desc: "Strategically crafted scripts that boost engagement and sales." },
                             { icon: <MdRecordVoiceOver size={34} />, title: "AI Voice-Over Integration", desc: "Seamless integration of high-quality AI voices that match your brand's tone and enhance the storytelling experience." },
-                            { icon: <FaPaintBrush size={30} />, title: "Graphic Design", desc: "Creative, eye-catching thumbnails, posters, and social media assets that maintain brand consistency and drive engagement." }
+                            { icon: <FaPaintBrush size={30} />, title: "Graphic Design", desc: "High-converting image ads that captivate and convert." }
                         ].map((service, i) => (
                             <motion.div
                                 key={i} variants={fadeUp}
@@ -232,31 +271,57 @@ const Enggo = () => {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    variants={staggerContainer}
-                    initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-                >
-                    {sampleVideos.map((item, index) => (
-                        <motion.div
-                            key={index} variants={fadeUp}
-                            onClick={() => setSelectedVideo(item.iframeSrc)}
-                            className="group relative rounded-[2rem] overflow-hidden aspect-video bg-white/5 backdrop-blur-xl border border-white/10 cursor-pointer shadow-[0_8px_32px_0_rgba(255,255,255,0.05)] p-2 hover:bg-white/10 transition-colors"
-                        >
-                            <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                                <img src="https://images.unsplash.com/photo-1550745165-9bc0b252726f?q=80&w=800&auto=format&fit=crop" alt="" className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105" />
-                                <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/10 transition-colors duration-300 pointer-events-none backdrop-blur-[2px] group-hover:backdrop-blur-0"></div>
+                <div className="space-y-20">
+                    {videoCategories.map((category, catIndex) => (
+                        <div key={catIndex}>
+                            <motion.h3
+                                initial="hidden" whileInView="visible" viewport={{ once: true }}
+                                variants={fadeUp}
+                                className="text-2xl font-bold text-fuchsia-400 mb-8 flex items-center gap-4"
+                            >
+                                <span className="w-12 h-[1px] bg-fuchsia-500/30"></span>
+                                {category.title}
+                                <span className="flex-1 h-[1px] bg-white/10"></span>
+                            </motion.h3>
+                            <motion.div
+                                variants={staggerContainer}
+                                initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+                                className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                            >
+                                {category.videos.map((item, index) => (
+                                    <motion.div
+                                        key={index} variants={fadeUp}
+                                        onClick={() => item.iframeSrc && setSelectedVideo(item.iframeSrc)}
+                                        className={`group relative rounded-[2rem] overflow-hidden aspect-video bg-white/5 backdrop-blur-xl border border-white/10 ${item.iframeSrc ? 'cursor-pointer' : 'cursor-default'} shadow-[0_8px_32px_0_rgba(255,255,255,0.05)] p-2 hover:bg-white/10 transition-colors`}
+                                    >
+                                        <div className="w-full h-full rounded-2xl overflow-hidden relative">
+                                            <img
+                                                src={item.img.startsWith('http') ? item.img : `https://lh3.googleusercontent.com/d/${item.img}`}
+                                                alt=""
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                            <div className="absolute inset-0 bg-slate-950/40 group-hover:bg-slate-950/10 transition-colors duration-300 pointer-events-none"></div>
 
-                                {/* Play Button Overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                    <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-xl text-white border border-white/20 flex items-center justify-center scale-90 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-fuchsia-500 group-hover:to-cyan-500 transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
-                                        <FaPlay className="w-6 h-6 ml-1" />
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
+                                            {/* Play Button Overlay */}
+                                            {item.iframeSrc && (
+                                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                                    <div className="w-16 h-16 rounded-full bg-white/10 backdrop-blur-xl text-white border border-white/20 flex items-center justify-center scale-90 group-hover:scale-110 group-hover:bg-gradient-to-r group-hover:from-fuchsia-500 group-hover:to-cyan-500 transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
+                                                        <FaPlay className="w-6 h-6 ml-1" />
+                                                    </div>
+                                                </div>
+                                            )}
+                                            {!item.iframeSrc && (
+                                                <div className="absolute inset-0 flex items-center justify-center">
+                                                    <span className="text-white/40 font-bold text-sm bg-black/40 px-4 py-2 rounded-full backdrop-blur-md">Coming Soon</span>
+                                                </div>
+                                            )}
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
                     ))}
-                </motion.div>
+                </div>
             </section>
 
 
@@ -290,7 +355,7 @@ const Enggo = () => {
                                     src={`https://lh3.googleusercontent.com/d/${item.img}`}
                                     className="w-full h-full  object-cover transition-transform duration-700 group-hover:scale-110"
                                 />
-                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300 backdrop-blur-[2px]"></div>
+                                <div className="absolute inset-0 bg-gradient-to-t from-slate-950/80 via-slate-950/10 to-transparent opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
                                 <div className="absolute inset-0 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                                     <div className="w-14 h-14 rounded-full bg-white/10 backdrop-blur-xl text-white border border-white/20 flex items-center justify-center scale-75 group-hover:scale-100 transition-all duration-300 shadow-[0_8px_32px_0_rgba(0,0,0,0.3)]">
