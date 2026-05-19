@@ -76,6 +76,7 @@ const carouselImages = [
 
 const Demolan = () => {
     const [selectedVideo, setSelectedVideo] = useState(null);
+    const [videoLoading, setVideoLoading] = useState(false);
     const [selectedImage, setSelectedImage] = useState(null);
     const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
@@ -312,22 +313,20 @@ const Demolan = () => {
                                 {categoryGroup.videos.map((item, index) => (
                                     <motion.div
                                         key={index} variants={fadeUp}
-                                        onClick={() => setSelectedVideo(item.iframeSrc)}
-                                        className="group relative rounded-[2rem] overflow-hidden aspect-video bg-white/5 border border-white/10 cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.2)] p-2 hover:border-cyan-500/50 transition-colors"
+                                        onClick={() => { setSelectedVideo(item.iframeSrc); setVideoLoading(true); }}
+                                        className="group relative rounded-[2rem] overflow-hidden aspect-video bg-gradient-to-br from-slate-800/80 to-slate-900/80 border border-white/10 cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.3)] p-2 hover:border-cyan-500/50 transition-all duration-300 hover:shadow-[0_12px_40px_rgba(6,182,212,0.15)]"
                                     >
-                                        <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                                            <img
-                                                src={item.img.startsWith('http') ? item.img : `https://lh3.googleusercontent.com/d/${item.img}`}
-                                                alt=""
-                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                            />
-                                            <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/5 transition-colors duration-300 pointer-events-none"></div>
-
-                                            {/* Play Button Overlay */}
-                                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                                <div className="w-16 h-16 rounded-full bg-slate-900/60 backdrop-blur-md text-cyan-400 border border-white/20 flex items-center justify-center scale-90 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
-                                                    <FaPlay className="w-6 h-6 ml-1" />
+                                        <div className="w-full h-full rounded-2xl overflow-hidden relative flex items-center justify-center">
+                                            {/* Subtle grid background */}
+                                            <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'linear-gradient(rgba(34,211,238,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.3) 1px, transparent 1px)', backgroundSize: '24px 24px'}}></div>
+                                            {/* Glow blob */}
+                                            <div className="absolute w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-500/20 transition-all duration-500"></div>
+                                            {/* Play Button */}
+                                            <div className="relative z-10 flex flex-col items-center gap-3">
+                                                <div className="w-16 h-16 rounded-full bg-slate-900/70 backdrop-blur-md text-cyan-400 border border-cyan-500/30 flex items-center justify-center group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white group-hover:border-cyan-500 transition-all duration-300 shadow-[0_0_25px_rgba(6,182,212,0.3)]">
+                                                    <FaPlay className="w-5 h-5 ml-1" />
                                                 </div>
+                                                <span className="text-xs font-semibold text-slate-400 group-hover:text-cyan-400 transition-colors uppercase tracking-widest">Play Video</span>
                                             </div>
                                         </div>
                                     </motion.div>
@@ -422,12 +421,16 @@ const Demolan = () => {
 
             {/* Video Modal */}
             {selectedVideo && (
-                <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 backdrop-blur-2xl bg-[#020617]/80 text-white shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]">
+                <div
+                    className="fixed inset-0 z-[100] flex items-center justify-center p-4 sm:p-6 backdrop-blur-2xl bg-[#020617]/80 text-white shadow-[0_8px_32px_0_rgba(0,0,0,0.5)]"
+                    onClick={() => setSelectedVideo(null)}
+                >
                     <motion.div
                         initial={{ opacity: 0, scale: 0.95 }}
                         animate={{ opacity: 1, scale: 1 }}
                         exit={{ opacity: 0, scale: 0.95 }}
                         className="w-full max-w-5xl aspect-video bg-[#0F172A]/50 backdrop-blur-3xl rounded-[2rem] overflow-hidden relative shadow-[0_20px_50px_rgba(0,0,0,0.5)] border border-white/10 p-2"
+                        onClick={(e) => e.stopPropagation()}
                     >
                         <button
                             onClick={() => setSelectedVideo(null)}
@@ -435,13 +438,26 @@ const Demolan = () => {
                         >
                             <MdClose size={24} />
                         </button>
+
+                        {/* Loading Spinner */}
+                        {videoLoading && (
+                            <div className="absolute inset-0 z-20 flex flex-col items-center justify-center gap-4 bg-[#0F172A]/80 rounded-[1.5rem]">
+                                <div className="relative w-16 h-16">
+                                    <div className="absolute inset-0 rounded-full border-4 border-cyan-500/20"></div>
+                                    <div className="absolute inset-0 rounded-full border-4 border-transparent border-t-cyan-400 animate-spin"></div>
+                                    <div className="absolute inset-2 rounded-full border-4 border-transparent border-t-blue-400 animate-spin" style={{ animationDirection: 'reverse', animationDuration: '0.8s' }}></div>
+                                </div>
+                                <p className="text-slate-400 text-sm font-medium tracking-widest uppercase">Loading video...</p>
+                            </div>
+                        )}
+
                         <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-slate-900">
                             <video
                                 src={selectedVideo}
-                                autoPlay={true}
+                                controls
+                                autoPlay
+                                onCanPlay={() => setVideoLoading(false)}
                                 className="w-full h-full border-none"
-                                allow="autoplay; fullscreen"
-                                allowFullScreen
                             ></video>
                         </div>
                     </motion.div>
