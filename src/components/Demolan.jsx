@@ -21,18 +21,49 @@ const staggerContainer = {
     }
 };
 
-const sampleVideos = [
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-    { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+const categorizedVideos = [
+    {
+        category: 'VSL',
+        description: 'High-converting Video Sales Letters',
+        videos: [
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+        ]
+    },
+    {
+        category: 'UGC',
+        description: 'Authentic User Generated Content',
+        videos: [
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+        ]
+    },
+    {
+        category: 'SHORT',
+        description: 'Engaging TikToks, Reels & Shorts',
+        videos: [
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+        ]
+    }
 ];
 
 const sampleImages = [
-    { img: '1adGivv-Mi_vVich35o9TTc0-iBJ0x5yz' },
-    { img: '1z6SdVKeYD1od-9hwoNzloUeX57t9kLw-' },
+    { img: '1shOzQXQH2nxZ6eEN_dYsRwfks7hLw7RX' },
+    { img: '1U5FBTJnn7vosS-8wObxDDfOMvSsA-pjN' },
+    { img: '1cILFAXcerk7IXHqWhBJoNdjnl71ngWVG' },
+    { img: '1K71yiNErFYARVITCioc3J9rzpPR4Wa77' },
+    { img: '1LkJwWdj-QqmwJsJqbe6WIduXV8rs_1iq' },
+    { img: '17KScav3_orOxVPHkBEeBXHaBc6BXaHBC' },
+    { img: '1TaBk3VRbH9HdFHgldfuI5c0ii4TlGSF0' },
+    { img: '1y7oaDAp8Vgm-UKcymmdmdM8d4RNS4psS' },
+    { img: '1xKDveyqBRdxA7X1LI4oNMBY7nI55CHAi' },
+    { img: '1SzyP9A9bsoKrnrEts1phSjNd0Kam_Bp5' },
+    { img: '18Ke0QfBHnIew5-0MpW9pvOKFFt9tqwCc' },
+    { img: '1WQTr4k3RC-AmOx7tAYBt70n4aEC8ExUF' },
 ];
 
 const carouselImages = [
@@ -258,35 +289,53 @@ const Demolan = () => {
                     </div>
                 </motion.div>
 
-                <motion.div
-                    variants={staggerContainer}
-                    initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
-                    className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
-                >
-                    {sampleVideos.map((item, index) => (
-                        <motion.div
-                            key={index} variants={fadeUp}
-                            onClick={() => setSelectedVideo(item.iframeSrc)}
-                            className="group relative rounded-[2rem] overflow-hidden aspect-video bg-white/5 border border-white/10 cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.2)] p-2 hover:border-cyan-500/50 transition-colors"
-                        >
-                            <div className="w-full h-full rounded-2xl overflow-hidden relative">
-                                <img
-                                    src={item.img.startsWith('http') ? item.img : `https://lh3.googleusercontent.com/d/${item.img}`}
-                                    alt=""
-                                    className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
-                                />
-                                <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/5 transition-colors duration-300 pointer-events-none"></div>
+                <div className="space-y-24">
+                    {categorizedVideos.map((categoryGroup, idx) => (
+                        <div key={idx}>
+                            <motion.div
+                                initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+                                variants={fadeUp}
+                                className="mb-8"
+                            >
+                                <h3 className="text-3xl font-bold text-white mb-2 flex items-center gap-3">
+                                    <span className="w-8 h-1 bg-cyan-500 rounded-full inline-block"></span>
+                                    {categoryGroup.category}
+                                </h3>
+                                <p className="text-slate-400 ml-11">{categoryGroup.description}</p>
+                            </motion.div>
 
-                                {/* Play Button Overlay */}
-                                <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
-                                    <div className="w-16 h-16 rounded-full bg-slate-900/60 backdrop-blur-md text-cyan-400 border border-white/20 flex items-center justify-center scale-90 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
-                                        <FaPlay className="w-6 h-6 ml-1" />
-                                    </div>
-                                </div>
-                            </div>
-                        </motion.div>
+                            <motion.div
+                                variants={staggerContainer}
+                                initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+                                className="grid md:grid-cols-2 lg:grid-cols-3 gap-8"
+                            >
+                                {categoryGroup.videos.map((item, index) => (
+                                    <motion.div
+                                        key={index} variants={fadeUp}
+                                        onClick={() => setSelectedVideo(item.iframeSrc)}
+                                        className="group relative rounded-[2rem] overflow-hidden aspect-video bg-white/5 border border-white/10 cursor-pointer shadow-[0_8px_30px_rgba(0,0,0,0.2)] p-2 hover:border-cyan-500/50 transition-colors"
+                                    >
+                                        <div className="w-full h-full rounded-2xl overflow-hidden relative">
+                                            <img
+                                                src={item.img.startsWith('http') ? item.img : `https://lh3.googleusercontent.com/d/${item.img}`}
+                                                alt=""
+                                                className="w-full h-full object-cover transition-transform duration-700 group-hover:scale-105"
+                                            />
+                                            <div className="absolute inset-0 bg-slate-900/10 group-hover:bg-slate-900/5 transition-colors duration-300 pointer-events-none"></div>
+
+                                            {/* Play Button Overlay */}
+                                            <div className="absolute inset-0 flex items-center justify-center pointer-events-none">
+                                                <div className="w-16 h-16 rounded-full bg-slate-900/60 backdrop-blur-md text-cyan-400 border border-white/20 flex items-center justify-center scale-90 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-[0_0_20px_rgba(6,182,212,0.3)]">
+                                                    <FaPlay className="w-6 h-6 ml-1" />
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </motion.div>
+                                ))}
+                            </motion.div>
+                        </div>
                     ))}
-                </motion.div>
+                </div>
             </section>
 
             {/* Selected Images Section */}
