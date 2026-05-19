@@ -29,13 +29,14 @@ const categorizedVideos = [
             { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
             { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/757qaof9itift8ztfyx0l/Creative-Batch-5.mp4?rlkey=1vog3ptpw4vehs42ahgshmrr8&st=co5mmsur&raw=1' },
             { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/757qaof9itift8ztfyx0l/Creative-Batch-5.mp4?rlkey=1vog3ptpw4vehs42ahgshmrr8&st=0mhwq90c&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/l9powbvaknoo3o189ycfw/H10_L1_VSL_1.mp4?rlkey=u99x0azzsbk03yh5qfgomufky&st=7e5617wc&raw=1' },
         ]
     },
     {
-        category: 'UGC',
+        category: 'Native Ads',
         description: 'Authentic User Generated Content',
         videos: [
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/l9powbvaknoo3o189ycfw/H10_L1_VSL_1.mp4?rlkey=u99x0azzsbk03yh5qfgomufky&st=7e5617wc&raw=1' },
             { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
             { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
         ]
@@ -318,7 +319,7 @@ const Demolan = () => {
                                     >
                                         <div className="w-full h-full rounded-2xl overflow-hidden relative flex items-center justify-center">
                                             {/* Subtle grid background */}
-                                            <div className="absolute inset-0 opacity-10" style={{backgroundImage: 'linear-gradient(rgba(34,211,238,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.3) 1px, transparent 1px)', backgroundSize: '24px 24px'}}></div>
+                                            <div className="absolute inset-0 opacity-10" style={{ backgroundImage: 'linear-gradient(rgba(34,211,238,0.3) 1px, transparent 1px), linear-gradient(90deg, rgba(34,211,238,0.3) 1px, transparent 1px)', backgroundSize: '24px 24px' }}></div>
                                             {/* Glow blob */}
                                             <div className="absolute w-32 h-32 bg-cyan-500/10 rounded-full blur-[40px] group-hover:bg-cyan-500/20 transition-all duration-500"></div>
                                             {/* Play Button */}
