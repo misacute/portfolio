@@ -26,27 +26,27 @@ const categorizedVideos = [
         category: 'VSL',
         description: 'High-converting Video Sales Letters',
         videos: [
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/757qaof9itift8ztfyx0l/Creative-Batch-5.mp4?rlkey=1vog3ptpw4vehs42ahgshmrr8&st=co5mmsur&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/757qaof9itift8ztfyx0l/Creative-Batch-5.mp4?rlkey=1vog3ptpw4vehs42ahgshmrr8&st=0mhwq90c&raw=1' },
         ]
     },
     {
         category: 'UGC',
         description: 'Authentic User Generated Content',
         videos: [
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
         ]
     },
     {
         category: 'SHORT',
         description: 'Engaging TikToks, Reels & Shorts',
         videos: [
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://drive.google.com/file/d/1Yl4kDg2gDlJ-Z7kmfDtDXDfQ-ldVgQc-/preview' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
         ]
     }
 ];
@@ -435,13 +435,14 @@ const Demolan = () => {
                         >
                             <MdClose size={24} />
                         </button>
-                        <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-slate-100">
-                            <iframe
+                        <div className="w-full h-full rounded-[1.5rem] overflow-hidden bg-slate-900">
+                            <video
                                 src={selectedVideo}
+                                autoPlay={true}
                                 className="w-full h-full border-none"
                                 allow="autoplay; fullscreen"
                                 allowFullScreen
-                            ></iframe>
+                            ></video>
                         </div>
                     </motion.div>
                 </div>
