@@ -109,9 +109,9 @@ const Demolan = () => {
                         <a href="#services" className="hover:text-cyan-400 transition-colors">Services</a>
                         <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
                     </div>
-                    <button className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:shadow-[0_8px_25px_rgba(6,182,212,0.4)] hover:scale-105 transition-all text-sm">
+                    <a href="https://www.onlinejobs.ph/jobseekers/info/4060111" target="_blank" className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:shadow-[0_8px_25px_rgba(6,182,212,0.4)] hover:scale-105 transition-all text-sm">
                         Hire Me
-                    </button>
+                    </a>
                 </div>
             </nav>
 
@@ -412,9 +412,9 @@ const Demolan = () => {
                         </div>
                         <p className="text-slate-500 font-medium">© {new Date().getFullYear()} REYNA MAESTUDIO. All rights reserved.</p>
                         <div className="flex gap-4 text-slate-500">
-                            <a href="#" className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaBriefcase size={18} /></a>
-                            <a href="#" className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaWhatsapp size={18} /></a>
-                            <a href="#" className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaEnvelope size={18} /></a>
+                            <a href="https://www.onlinejobs.ph/jobseekers/info/4060111" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaBriefcase size={18} /></a>
+                            <a href="https://wa.me/639318192419" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaWhatsapp size={18} /></a>
+                            <a href="mailto:reynademol@gmail.com" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaEnvelope size={18} /></a>
                         </div>
                     </div>
                 </div>
