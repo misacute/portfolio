@@ -2,7 +2,9 @@ import { useState, useEffect } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import {
     FaPlay, FaImage, FaVideo, FaRocket, FaEnvelope,
-    FaWhatsapp, FaBriefcase
+    FaWhatsapp, FaBriefcase, FaBullhorn, FaPalette,
+    FaPen, FaFileAlt, FaRobot, FaChartLine,
+    FaCut, FaMicrophone, FaMagic, FaFileAudio
 } from 'react-icons/fa';
 import { MdOutlineSlowMotionVideo, MdClose } from "react-icons/md";
 
@@ -36,9 +38,9 @@ const categorizedVideos = [
         category: 'Native Ads',
         description: 'Authentic User Generated Content',
         videos: [
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/l9powbvaknoo3o189ycfw/H10_L1_VSL_1.mp4?rlkey=u99x0azzsbk03yh5qfgomufky&st=7e5617wc&raw=1' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
-            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/whmy57lmgfgrjp9jrxcys/Creative-Batch-4-Hook3_Body1.mp4?rlkey=5f1ly7br2ul0bdwh0pitxas7x&st=74dx87af&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/zsa3vkj0szdmt1aniyxd8/ORGANIC-AD-3-Haircare-Routine-1.mp4?rlkey=fvhmuv7imtnm6tonb0wn2aydg&st=zxbwy1hn&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/cjs5paaxstic4afbbx9sx/ORGANIC-AD-3-Haircare-Routine-2.mp4?rlkey=hj3nk0d7j4t67a7npuevycwkh&st=2zy19uz8&raw=1' },
+            { img: '1_Tb0GU1aesjw-U8rvtsXnF9pHOGB_52M', iframeSrc: 'https://www.dropbox.com/scl/fi/qeyvx6pg72qggj7q4nio1/Froi-FC5.mp4?rlkey=69eisb6iylei9093ivgtyhmyv&st=xe86vjuw&raw=1' },
         ]
     },
     {
@@ -109,7 +111,7 @@ const Demolan = () => {
                         <a href="#services" className="hover:text-cyan-400 transition-colors">Services</a>
                         <a href="#contact" className="hover:text-cyan-400 transition-colors">Contact</a>
                     </div>
-                    <a href="https://www.onlinejobs.ph/jobseekers/info/4060111" target="_blank" className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:shadow-[0_8px_25px_rgba(6,182,212,0.4)] hover:scale-105 transition-all text-sm">
+                    <a href="https://www.onlinejobs.ph/jobseekers/info/4159264" target="_blank" className="px-6 py-2.5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-bold rounded-full hover:shadow-[0_8px_25px_rgba(6,182,212,0.4)] hover:scale-105 transition-all text-sm">
                         Hire Me
                     </a>
                 </div>
@@ -156,7 +158,7 @@ const Demolan = () => {
                                 transition={{ duration: 0.8, delay: 0.4 }}
                                 className="inline-block font-serif italic text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-400"
                             >
-                                Cinematic
+                                Creative
                             </motion.span>{" "}
                             <motion.span
                                 initial={{ opacity: 0, y: 20 }}
@@ -166,7 +168,7 @@ const Demolan = () => {
                             >
                                 <span className="absolute inset-0 bg-cyan-400/20 rounded-3xl -z-10 scale-125 blur-3xl opacity-50"></span>
                                 <span className="relative text-white group-hover:text-cyan-300 transition-colors duration-500">
-                                    Visuals
+                                    Video Editor
                                 </span>
                             </motion.span><br />
                             <motion.div
@@ -175,9 +177,9 @@ const Demolan = () => {
                                 transition={{ duration: 1, delay: 0.8 }}
                                 className="text-2xl sm:text-3xl md:text-4xl text-slate-400 font-bold tracking-tight mt-6 block max-w-2xl leading-snug"
                             >
-                                <span className="text-cyan-500">Elevating Brands</span> through
+                                <span className="text-cyan-500">E-Commerce</span> & Dropshipping
                                 <span className="relative inline-block ml-3">
-                                    Strategic Motion
+                                    Ad Special
                                     <span className="absolute -bottom-1 left-0 w-full h-0.5 bg-gradient-to-r from-cyan-500 to-transparent"></span>
                                 </span>
                                 <span className="inline-block animate-pulse text-cyan-400 ml-3">✦</span>
@@ -191,7 +193,7 @@ const Demolan = () => {
                             transition={{ duration: 1, delay: 1 }}
                             className="text-lg md:text-xl text-slate-400 max-w-xl mb-12 leading-relaxed font-medium border-l-2 border-cyan-500/50 pl-6"
                         >
-                            I am a passionate Video Editor & Graphic Designer with strong research skills and a year of experience crafting highly engaging e-commerce video ads and compelling image creatives.
+                            Hi, I'm Reyna, a passionate Video Editor, and Graphic Designer with hands-on experience crafting engaging and conversion-focused content especially for the e-commerce space.
                         </motion.p>
 
                         <motion.div
@@ -255,16 +257,49 @@ const Demolan = () => {
                     <motion.div
                         variants={staggerContainer}
                         initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
-                        className="grid md:grid-cols-3 gap-8"
+                        className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8"
                     >
                         {[
-                            { icon: <FaVideo size={30} />, title: "Video Ads & Edits", desc: "Fast-paced, hook-driven TikToks, Reels, and YouTube ads designed for maximum engagement." },
-                            { icon: <FaImage size={30} />, title: "Image Creatives", desc: "Striking graphics and carousel ads tuned perfectly for Facebook and Instagram algorithms." },
-                            { icon: <MdOutlineSlowMotionVideo size={34} />, title: "Motion Graphics", desc: "Custom animations, kinetic typography, and VFX that make your content impossible to ignore." }
+                            {
+                                icon: <FaBullhorn size={28} />,
+                                title: "Content Creation & Strategy",
+                                desc: "I know how to plan and create content that connects with audiences and aligns with brand goals."
+                            },
+                            {
+                                icon: <FaVideo size={28} />,
+                                title: "Video Editing",
+                                desc: "Eye-catching, scroll-stopping ads for dropshipping & e-commerce brands. I focus on short-form content that drives clicks, conversions, and sales."
+                            },
+                            {
+                                icon: <FaPalette size={28} />,
+                                title: "Graphic Design & Visual Identity",
+                                desc: "I craft visuals that are not only beautiful but also on-brand and performance-driven."
+                            },
+                            {
+                                icon: <FaPen size={28} />,
+                                title: "Copywriting",
+                                desc: "I write captions and ad copy that gets people to engage, click, and convert."
+                            },
+                            {
+                                icon: <FaFileAlt size={28} />,
+                                title: "Ad Scriptwriting",
+                                desc: "Compelling, conversion-focused scripts tailored for short-form video ads that hook viewers and drive action."
+                            },
+                            {
+                                icon: <FaRobot size={28} />,
+                                title: "AI Voice-Over Integration",
+                                desc: "Adding lifelike, on-brand AI voiceovers to elevate video storytelling and keep audiences engaged."
+                            },
+                            {
+                                icon: <FaChartLine size={28} />,
+                                title: "Market Research",
+                                desc: "Analyzing trends, competitors, and audience behavior to craft content that performs across platforms."
+                            }
                         ].map((service, i) => (
                             <motion.div
                                 key={i} variants={fadeUp}
-                                className="p-10 rounded-[2.5rem] bg-white/5 border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:border-cyan-500/50 hover:shadow-[0_15px_40px_rgba(6,182,212,0.1)] transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden backdrop-blur-sm"
+                                className={`p-10 rounded-[2.5rem] bg-white/5 border border-white/10 shadow-[0_8px_30px_rgba(0,0,0,0.2)] hover:border-cyan-500/50 hover:shadow-[0_15px_40px_rgba(6,182,212,0.1)] transition-all duration-300 group hover:-translate-y-2 relative overflow-hidden backdrop-blur-sm ${i === 6 ? 'md:col-span-2 lg:col-span-3 lg:max-w-2xl lg:mx-auto lg:w-full' : ''
+                                    }`}
                             >
                                 <div className="absolute -top-20 -right-20 w-40 h-40 bg-cyan-500/10 rounded-full blur-[50px] group-hover:bg-cyan-500/20 transition-all duration-500"></div>
                                 <div className="w-16 h-16 rounded-2xl bg-cyan-500/10 border border-cyan-500/20 text-cyan-400 flex items-center justify-center mb-8 group-hover:scale-110 group-hover:bg-cyan-500 group-hover:text-white transition-all duration-300 shadow-sm relative z-10">
@@ -274,6 +309,34 @@ const Demolan = () => {
                                 <p className="text-slate-400 leading-relaxed text-lg relative z-10">{service.desc}</p>
                             </motion.div>
                         ))}
+                    </motion.div>
+
+                    <motion.div
+                        initial="hidden" whileInView="visible" viewport={{ once: true, margin: "-100px" }}
+                        variants={fadeUp}
+                        className="mt-16 pt-10 border-t border-white/5 text-center max-w-4xl mx-auto"
+                    >
+                        <h2 className="text-4xl md:text-5xl font-black tracking-tight mb-8 text-white">
+                            Editing Tools I Use
+                        </h2>
+                        <div className="flex flex-wrap justify-center gap-3.5">
+                            {[
+                                { name: 'Canva', icon: <FaPalette className="text-cyan-400" /> },
+                                { name: 'CapCut', icon: <FaCut className="text-cyan-400" /> },
+                                { name: 'ElevenLabs', icon: <FaMicrophone className="text-cyan-400" /> },
+                                { name: 'Vmake', icon: <FaMagic className="text-cyan-400" /> },
+                                { name: 'Kie.ai', icon: <FaRobot className="text-cyan-400" /> },
+                                { name: 'Descript', icon: <FaFileAudio className="text-cyan-400" /> }
+                            ].map((tool) => (
+                                <span
+                                    key={tool.name}
+                                    className="inline-flex items-center gap-2 px-4 py-2 rounded-full bg-white/5 border border-white/10 text-slate-300 text-sm sm:text-base font-semibold hover:border-cyan-500/50 hover:bg-cyan-500/10 hover:text-cyan-300 transition-all duration-300 shadow-md hover:shadow-[0_4px_20px_rgba(6,182,212,0.15)] hover:-translate-y-0.5 cursor-default"
+                                >
+                                    {tool.icon}
+                                    {tool.name}
+                                </span>
+                            ))}
+                        </div>
                     </motion.div>
                 </div>
             </section>
@@ -395,12 +458,17 @@ const Demolan = () => {
                         initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
                         className="text-xl md:text-2xl text-slate-400 mb-12"
                     >
-                        Let's collaborate to craft visuals that not only look incredible but perform exceptionally well.
+                        Let’s create something that makes people stop scrolling and start clicking.
                     </motion.p>
 
                     <motion.a
-                        href="mailto:hello@example.com"
-                        initial="hidden" whileInView="visible" viewport={{ once: true }} variants={fadeUp}
+                        href="https://www.onlinejobs.ph/jobseekers/info/4159264"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        initial="hidden"
+                        whileInView="visible"
+                        viewport={{ once: true }}
+                        variants={fadeUp}
                         className="inline-flex items-center gap-3 px-12 py-5 bg-gradient-to-r from-cyan-500 to-blue-600 text-white font-black rounded-full hover:shadow-[0_10px_30px_rgba(6,182,212,0.4)] hover:scale-105 transition-all text-xl mb-24"
                     >
                         Start a Project
@@ -412,7 +480,7 @@ const Demolan = () => {
                         </div>
                         <p className="text-slate-500 font-medium">© {new Date().getFullYear()} REYNA MAESTUDIO. All rights reserved.</p>
                         <div className="flex gap-4 text-slate-500">
-                            <a href="https://www.onlinejobs.ph/jobseekers/info/4060111" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaBriefcase size={18} /></a>
+                            <a href="https://www.onlinejobs.ph/jobseekers/info/4159264" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaBriefcase size={18} /></a>
                             <a href="https://wa.me/639318192419" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaWhatsapp size={18} /></a>
                             <a href="mailto:reynademol@gmail.com" target='_blank' className="p-3 bg-white/5 hover:bg-cyan-500 hover:text-white border border-white/10 hover:border-cyan-500 transition-all shadow-sm rounded-full"><FaEnvelope size={18} /></a>
                         </div>
