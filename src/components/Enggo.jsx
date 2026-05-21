@@ -57,6 +57,9 @@ const videoCategories = [
 ];
 
 const sampleImages = [
+    { img: '1UmGWBgvw0OQxRAJQAHlK4F-9XJxxxuJv' },
+    { img: '12bcpX9uF4beeCZxYdpjx2B0FLj9Xa4Vy' },
+    { img: '1X6jDwRFl4JAF18jddbuKCLlrZFRBN3Aw' },
     { img: '1adGivv-Mi_vVich35o9TTc0-iBJ0x5yz' },
     { img: '1z6SdVKeYD1od-9hwoNzloUeX57t9kLw-' },
     { img: '1dIEJh2jfbR9utHroX7ME2tkmTmDbMTfT' },
